@@ -1,20 +1,20 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package AppInternet;
 
 import java.net.InetAddress;
 import java.net.UnknownHostException;
 
 /**
- *
- * @author Pepe
+ * Obtiene el tercer byte de la dirección ip del aula
+ * @author José M. Yébenes
  */
 public class SubRed {
-   public SubRed() {}
-   public String getSubred() throws UnknownHostException {
+    /** Constructor SubRed()  */
+    public SubRed() {}
+    /** Método que obtiene la dirección IP
+     *  @return sIpAddress sIpAddress: String con el tercer byte de 
+     *  la dirección IP del aula
+     */
+    public String getSubred() throws UnknownHostException {
        String sIpAddress = "";
        InetAddress address = InetAddress.getLocalHost();
        byte[] bIpAddress = address.getAddress();

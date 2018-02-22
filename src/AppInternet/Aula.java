@@ -1,16 +1,17 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+* Obtiene nombre del script del servidor Linux
+*  @author Pepe
+*/
 package AppInternet;
 
-/**
- *
- * @author Pepe
- */
 public class Aula {
+    /**
+    * Constructor Aula()
+    */
     public Aula() {}
+    /** Método que obtiene el nombre del script 
+     * @param red Tercer byte de la dirección IP del aula
+     */
     public String getAula(String red) {
         String numaula="";
         

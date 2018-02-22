@@ -126,7 +126,6 @@
           <Image iconType="3" name="/Imagenes/usuario.png"/>
         </Property>
         <Property name="toolTipText" type="java.lang.String" value="Validaci&#xf3;n de usuario"/>
-        <Property name="actionCommand" type="java.lang.String" value=""/>
         <Property name="selected" type="boolean" value="true"/>
       </Properties>
       <Events>

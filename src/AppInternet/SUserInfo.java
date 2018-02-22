@@ -1,29 +1,32 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package AppInternet;
 
 import com.jcraft.jsch.UserInfo;
 
 /**
- *
+ * Parametros del usuario para realizar la conexión
  * @author Pepe
  */
 public class SUserInfo implements UserInfo{
+    /** Variables password y passPhrase */ 
     private String password;
     private String passPhrase;
- 
+    /** Constructor SUserInfo
+     * @param password Password de usuario linux
+     * @param  passPhrase Passphrase
+     */
     public SUserInfo (String password, String passPhrase) {
         this.password = password;
         this.passPhrase = passPhrase;
     }
- 
+    /** Método get para obtener passphrase
+     * @return passPhrase passPhrase : Valor del Passphrase
+     */
     public String getPassphrase() {
         return passPhrase;
     }
- 
+    /** Método get para obtener passphrase
+     * @return password Password: Valor de la clave del usuario linux
+     */
     public String getPassword() {
         return password;
     }

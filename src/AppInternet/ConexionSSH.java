@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package AppInternet;
 
 import com.jcraft.jsch.ChannelExec;
@@ -16,16 +12,21 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 
 /**
- *
+ * Conexión SSH con servidor Linux
  * @author Pepe
  */
 public class ConexionSSH {
-    private static final String user = "operador";
-    private static final String host = "10.0.1.113";
-    private static final Integer port = 22;
-    private static final String pass = "AAA111aaa";
-    public void ConexionSSH() {}
-    public void ejecutarComando(String comando) throws JSchException, IOException {
+        /** Valores de la constantes user, host, pot y pass */
+        private static final String user = "operador";
+        private static final String host = "10.0.1.113";
+        private static final Integer port = 22;
+        private static final String pass = "AAA111aaa";
+        /** Constructor */
+        public void ConexionSSH() {}
+        /** Método que ejecuta la conexión 
+         * @param comando Script a ejecutar en el servidor Linux
+         */
+        public void ejecutarComando(String comando) throws JSchException, IOException {
         JSch jsch = new JSch();
         Session session = jsch.getSession(user, host, port);
         UserInfo ui = new SUserInfo(pass, null);
